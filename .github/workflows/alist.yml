@@ -22,4 +22,3 @@ jobs:
       run: Web.Ping --host https://alist.52qy.repl.co
     - name: Ping demo.zkea.net
       run: Web.Ping --host https://alist.52qy.repl.co
-
