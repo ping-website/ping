@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
   schedule: 
-    - cron: '*/5 * * * *' #every 5 minutes
+    - cron: '*/6 * * * *' 
 jobs:
   ping:
 
@@ -18,9 +18,17 @@ jobs:
         dotnet-version: 6.0.x
     - name: Install dependencies
       run: dotnet tool install Web.Ping -g
-    - name: Ping alist.52qy.repl.co
+    - name: Ping ytsite.aqingyuan.repl.co
+      run: Web.Ping --host ytsite.aqingyuan.repl.co
+    - name: Ping ytsite.aqingyuan.repl.co
       run: Web.Ping --host https://ytsite.aqingyuan.repl.co
-    - name: Ping demo.zkea.net
+    - name: Ping ytsite.aqingyuan.repl.co
+      run: Web.Ping --host ytsite.aqingyuan.repl.co
+    - name: Ping ytsite.aqingyuan.repl.co
       run: Web.Ping --host https://ytsite.aqingyuan.repl.co
-    - name: Ping demo.zkea.net
+    - name: Ping ytsite.aqingyuan.repl.co
       run: Web.Ping --host https://ytsite.aqingyuan.repl.co
+
+
+
+
