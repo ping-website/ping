@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
   schedule: 
-    - cron: '*/6 * * * *' #every 5 minutes
+    - cron: '*/8 * * * *' #every 8 minutes
 jobs:
   ping:
 
